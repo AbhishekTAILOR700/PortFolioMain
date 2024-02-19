@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/briefcase.ico">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Abhishek Tailor</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Abhishek Tailor</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="avatar" src="assets/Anime Avatar.PNG" alt="Abhishek pfp" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="name2" class="title">Abhishek Tailor</h1>
+      <p class="section__text__p2">Fullstack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Abhishek Tailor OffResume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='index.html#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon linkedIcon"
+          onclick="window.open('https://www.linkedin.com/in/abhishek-tailor-55a0522aa/')" />
+
+        <img src="assets/github.png" alt="My Github profile" class="icon gitIcon"
+          onclick="window.open('https://github.com/AbhishekTAILOR700')" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title aboutTitle">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <div class="gopherContainer">
+
+          <div class=" centreBlock">
+            <img class="gopherPic" id="anchor" src="./assets/gopherFol/gopher.png" alt="">
+            <!-- <div class="leftEye" ></div>
+              <div class="rightEye"></div> -->
+            <img class="leftSocket eye" src="./assets/gopherFol/eyeSocket.png" alt="">
+            <img class="rightSocket eye" src="./assets/gopherFol/eyeSocket.png" alt="">
+          </div>
+
+          <img src="assets/Anime Avatar.PNG" alt="Profile picture" class="about-pic" />
+        </div>
+      </div>
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.E. Bachelors Degree <br> <strong>CGPA : 8.71</strong></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello, Abhishek here with a relentless drive to become a Fullstack web developer/Software Engineer
+            I thrive on the intersection of creativity & technology, 
+            My Love for web-dev stems from its dynamic nature where every line of code has the potential 
+            to transform digital landscape. I would love to join you & build something awesome with you,
+            Feel Free to reach out to me.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='index.html#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skill Set</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JQuery</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><% EJS %></h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ReactJs</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySql</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Axios</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='index.html#projects'" />
+  </section>
+
+  <div class="outside">
+
+    <div id="wrapper" data-configuration="1" data-roundness="1">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+  </div>
+
+  <div class="ProjectDiv">
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="assets/Project-Snake.png"
+              alt="Project 1 img"
+              class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Snake Game</h2>
+            <p class="experience-skills">HTML, CSS, JavaScript, JQuery</p>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AbhishekTAILOR700/Snake-Game')"
+              >
+              Github
+            </button>
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://abhishektailor700.github.io/Snake-Game/')"
+            >
+            Live Demo
+          </button>
+        </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="assets/Project-Todo.png"
+              alt="Project 2 img"
+              class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ToDo List</h2>
+            <p class="experience-skills">HTML, CSS, JavaScript, ReactJs</p>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AbhishekTAILOR700/ToDo-List-React-')"
+              >
+              Github
+            </button>
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://todolist700.netlify.app/')"
+            >
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+          src="assets/Project-QrCode.png"
+          alt="Project 3 img"
+          class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Qr Code Generator</h2>
+        <p class="experience-skills">HTML, CSS, JavaScript, NodeJs, ExpressJs</p>
+        <div class="btn-container">
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="window.open('https://github.com/AbhishekTAILOR700/Qr-code-generator-website')"
+          >
+          Github
+        </button>
+        <button
+        class="btn btn-color-2 project-btn"
+        onclick="window.open('https://qr-generator-kf7f.onrender.com/')"
+        >
+        Live Demo
+      </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="assets/KeeperProjectPic.png"
+              alt="Project 4 img"
+              class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Keeper App (ReactJs)</h2>
+            <p class="experience-skills">HTML, CSS, JavaScript</p>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AbhishekTAILOR700/Keeper')"
+              >
+              Github
+            </button>
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('')"
+            >
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+          src="assets/Project-ECommerce.png"
+          alt="Project 5 img"
+          class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">E-Commerce Website</h2>
+        <p class="experience-skills">HTML, CSS, JavaScript, FlexBox</p>
+        <div class="btn-container">
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="window.open('https://github.com/AbhishekTAILOR700/E-commerce')"
+          >
+          Github
+        </button>
+        <button
+        class="btn btn-color-2 project-btn"
+        onclick="window.open('https://abhishektailor700.github.io/E-commerce/')"
+        >
+        Live Demo
+      </button>
+    </div>
+  </div>
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img
+      src="assets/Project-WorkProgress.jpg"
+      alt="Project 6 img"
+      class="project-img"
+      />
+    </div>
+    <h2 class="experience-sub-title project-title">E-Commerce (ReactJs)</h2>
+    <p class="experience-skills">MERN Stack</p>
+    <div class="btn-container">
+      <button
+      class="btn btn-color-2 project-btn"
+      onclick="window.open('')"
+      >
+      Github
+    </button>
+    <button
+    class="btn btn-color-2 project-btn"
+    onclick="window.open('')"
+    >
+    Live Demo
+  </button>
+    </div>
+    </div>
+  </div>
+</div>
+    <img
+    src="assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='index.html#contact'"
+    />
+</section>
+</div>
+<!-- ****************************************CONTACT********************************************** -->
+<div class="LastDivContact">
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:abhishektailor700@gmail.com">abhishektailor700@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+          src="assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/abhishek-tailor-55a0522aa/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="footerYear">Copyright &#169; <script>document.write(new Date().getFullYear())</script> Abhishek Tailor.</p>
+    </footer>
+  </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
